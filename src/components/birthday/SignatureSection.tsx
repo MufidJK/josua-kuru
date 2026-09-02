@@ -4,7 +4,7 @@ import { SectionLabel } from "./SectionLabel";
 
 export function SignatureSection() {
   return (
-    <section className="px-6 md:px-12 lg:px-24 py-24 md:py-32 max-w-[1200px] mx-auto w-full text-center flex flex-col items-center">
+    <section className="px-6 md:px-12 lg:px-24 py-24 md:py-32 max-w-300 mx-auto w-full text-center flex flex-col items-center">
       <SectionLabel className="mb-12 md:mb-16 justify-center">
         {birthdayContent.signature.sectionLabel}
       </SectionLabel>
@@ -19,7 +19,7 @@ export function SignatureSection() {
         </p>
         
         <div className="mt-8 flex flex-col items-center gap-4">
-          <div className="w-[1px] h-16 bg-border"></div>
+          <div className="w-px h-16 bg-border"></div>
           <p className="font-serif italic text-2xl md:text-3xl text-primary mt-4">
             {birthdayContent.signature.name}
           </p>

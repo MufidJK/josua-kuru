@@ -3,13 +3,13 @@ import { birthdayContent } from "@/data/birthday";
 
 export function Hero() {
   return (
-    <section className="relative min-h-[90vh] flex flex-col justify-between px-6 md:px-12 lg:px-24 py-12 md:py-20 max-w-[1600px] mx-auto w-full">
+    <section className="relative min-h-[90vh] flex flex-col justify-between px-6 md:px-12 lg:px-24 py-12 md:py-20 max-w-400 mx-auto w-full">
       {/* Top Metadata */}
       <div className="flex flex-wrap items-center justify-between gap-4 text-[10px] md:text-xs font-semibold tracking-[0.15em] text-secondary uppercase animate-fade-in">
         <span>{birthdayContent.heroMetadata.date}</span>
-        <span className="hidden sm:inline-block w-8 h-[1px] bg-border"></span>
+        <span className="hidden sm:inline-block w-8 h-px bg-border"></span>
         <span>{birthdayContent.heroMetadata.edition}</span>
-        <span className="hidden sm:inline-block w-8 h-[1px] bg-border"></span>
+        <span className="hidden sm:inline-block w-8 h-px bg-border"></span>
         <span>{birthdayContent.heroMetadata.location}</span>
       </div>
 
@@ -19,7 +19,7 @@ export function Hero() {
           {birthdayContent.recipient.toUpperCase()}
         </h1>
         <div className="flex items-center gap-4 md:gap-8 mt-4 md:mt-8 ml-2 md:ml-4 animate-rise-2">
-          <div className="w-12 md:w-24 h-[1px] bg-primary"></div>
+          <div className="w-12 md:w-24 h-px bg-primary"></div>
           <p className="font-serif italic text-3xl sm:text-4xl md:text-5xl lg:text-7xl text-primary">
             {birthdayContent.heroSubtitle}
           </p>

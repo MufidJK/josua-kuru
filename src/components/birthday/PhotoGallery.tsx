@@ -108,7 +108,7 @@ export function PhotoGallery() {
 
   return (
     <section className="py-24 md:py-32 w-full overflow-hidden">
-      <div className="px-6 md:px-12 lg:px-24 mb-12 md:mb-20 max-w-[1600px] mx-auto">
+      <div className="px-6 md:px-12 lg:px-24 mb-12 md:mb-20 max-w-400 mx-auto">
         <SectionLabel>{birthdayContent.gallery.sectionLabel}</SectionLabel>
       </div>
 
@@ -123,7 +123,7 @@ export function PhotoGallery() {
         {birthdayContent.gallery.images.map((image, index) => (
           <div
             key={image.id}
-            className={`relative flex-shrink-0 snap-center md:snap-start group ${image.aspectRatio} w-[85vw] sm:w-[60vw] md:w-[45vw] lg:w-[30vw] max-h-[75vh]`}
+            className={`relative shrink-0 snap-center md:snap-start group ${image.aspectRatio} w-[85vw] sm:w-[60vw] md:w-[45vw] lg:w-[30vw] max-h-[75vh]`}
           >
             <div className="w-full h-full relative overflow-hidden bg-[#e5e1d8]">
               <Image
@@ -147,7 +147,7 @@ export function PhotoGallery() {
       </div>
 
       {/* Subtle Editorial Horizontal Scrollbar Indicator */}
-      <div className="px-6 md:px-12 lg:px-24 max-w-[1600px] mx-auto mt-4 md:mt-6">
+      <div className="px-6 md:px-12 lg:px-24 max-w-400 mx-auto mt-4 md:mt-6">
         <div
           ref={trackRef}
           role="scrollbar"
@@ -158,11 +158,11 @@ export function PhotoGallery() {
           aria-valuemax={100}
           aria-orientation="horizontal"
           onPointerDown={handlePointerDown}
-          className="relative w-full h-[3px] bg-[#DDD9D1] cursor-pointer rounded-full overflow-hidden transition-opacity duration-300 select-none"
+          className="relative w-full h-0.75 bg-border cursor-pointer rounded-full overflow-hidden transition-opacity duration-300 select-none"
         >
           <div
             ref={thumbRef}
-            className="absolute top-0 bottom-0 left-0 bg-[#77736D] hover:bg-[#171717] active:bg-[#7A3038] rounded-full transition-colors duration-200 pointer-events-none"
+            className="absolute top-0 bottom-0 left-0 bg-secondary hover:bg-primary active:bg-accent rounded-full transition-colors duration-200 pointer-events-none"
             style={{ width: "20%", transform: "translateX(0px)" }}
           />
         </div>

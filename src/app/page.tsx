@@ -7,7 +7,7 @@ import { Footer } from "@/components/birthday/Footer";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col bg-[#F7F5F0] overflow-x-hidden">
+    <main className="flex min-h-screen flex-col bg-ivory overflow-x-hidden">
       <Hero />
       <MessageSection />
       <PhotoGallery />

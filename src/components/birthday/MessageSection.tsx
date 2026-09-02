@@ -4,7 +4,7 @@ import { SectionLabel } from "./SectionLabel";
 
 export function MessageSection() {
   return (
-    <section className="px-6 md:px-12 lg:px-24 py-24 md:py-32 max-w-[1200px] mx-auto w-full">
+    <section className="px-6 md:px-12 lg:px-24 py-24 md:py-32 max-w-300 mx-auto w-full">
       <SectionLabel className="mb-12 md:mb-20">{birthdayContent.message.sectionLabel}</SectionLabel>
       
       <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-16">
