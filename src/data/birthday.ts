@@ -34,7 +34,7 @@ export const birthdayContent = {
         src: "/birthday/photos/photo-02.jpg",
         alt: "Creative workspace setup",
         caption: "The tinkering setup",
-        aspectRatio: "aspect-[16/10]"
+        aspectRatio: "aspect-[4/4]"
       },
       {
         id: 3,
@@ -55,7 +55,7 @@ export const birthdayContent = {
         src: "/birthday/photos/photo-05.jpg",
         alt: "Coding late at night",
         caption: "Ambition",
-        aspectRatio: "aspect-[16/10]"
+        aspectRatio: "aspect-[1/1]"
       },
       {
         id: 6,
@@ -69,7 +69,7 @@ export const birthdayContent = {
         src: "/birthday/photos/photo-07.jpg",
         alt: "Mathematical thinking",
         caption: "The whiteboard",
-        aspectRatio: "aspect-[3/4]"
+        aspectRatio: "aspect-[10/5]"
       },
       {
         id: 8,
