@@ -85,7 +85,7 @@ export const birthdayContent = {
     sectionLabel: "02 — CAUGHT IN HIS NATURAL HABITAT",
     subtitle: "Presenting, explaining, and acting like he's preparing for his TED Talk.",
     src: "/birthday/videos/video-01.mp4",
-    poster: "/birthday/photos/photo-01.jpg"
+    poster: "/birthday/photos/josua-thumbnail.jpg"
   },
 
   signature: {
