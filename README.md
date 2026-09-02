@@ -20,6 +20,12 @@
 
 ## Project Overview
 
+<p align="center">
+  <a href="https://josuakuru.vercel.app">
+    <img src="https://img.shields.io/badge/🌐_Live_Demo-Josuakuru-7A3038?style=for-the-badge" alt="Live Demo">
+  </a>
+</p>
+
 **Josuakuru** is a bespoke, editorial-grade digital birthday tribute created for Josua's 19th birthday. 
 
 Moving away from the standard greeting card format, this project embraces a luxury, high-fashion magazine aesthetic. It combines striking typography, a curated color palette, interactive photography, and personal storytelling. The website serves as both an elegant visual showcase and a humorous commentary on Josua's passion for gadgetry, data science, and his ambition in the tech space.
