@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-ivory: #F7F5F0;
+  --color-primary: #171717;
+  --color-secondary: #77736D;
+  --color-border: #DDD9D1;
+  --color-accent: #7A3038;
+  
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-newsreader), ui-serif, Georgia, serif;
+  
+  --animate-fade-in: fade-in 1s ease-out forwards;
+  --animate-fade-in-late: fade-in 1.5s ease-out 1s forwards;
+  --animate-rise-1: rise 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  --animate-rise-2: rise 1s cubic-bezier(0.16, 1, 0.3, 1) 0.2s forwards;
+  
+  @keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  @keyframes rise {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+}
+
+/* Hide scrollbar for the gallery but keep it functional */
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Base styles for a smooth, editorial feel with visible page vertical scrollbar */
+html {
+  background-color: var(--color-ivory);
+  color: var(--color-primary);
+  overflow-y: auto;
+  scrollbar-width: auto;
+}
+
+body {
+  background-color: var(--color-ivory);
+  color: var(--color-primary);
+  overflow-x: hidden;
+}
+
+::selection {
+  background-color: var(--color-accent);
+  color: var(--color-ivory);
+}
+
+/* Disable default button/link outline but keep focus-visible for accessibility */
+*:focus:not(:focus-visible) {
+  outline: none;
+}
+*:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
